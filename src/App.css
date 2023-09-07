@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --primary:#00b4d8;
+  --primary-light:#48cae4;
+  --primary-dark:#0096c7;
+  --primary-darker:#0077b6;
+
+  --shadow: #aeadad;
+  --white:#fff;
+  --black:#212121;
+}
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }

@@ -1,0 +1,21 @@
+.outline-btn{
+    padding: 0.5em 1em;
+    margin:1em;
+    color:var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 0.3em;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.outline-btn:hover{
+    background-color: var(--primary);
+    color:#fff;
+    background-color:var(--primary-dark);
+}
+
+.outline-btn:active{
+    box-shadow: none;
+}

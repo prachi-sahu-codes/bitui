@@ -1,0 +1,28 @@
+
+.icon-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5em 1em;
+    color:#fff;
+    margin:1em;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.icon-btn:hover{
+    background-color:var(--primary-dark);
+}
+
+.icon-btn:active{
+    box-shadow: none;
+}
+
+.icon-logo{
+    display: flex;
+}
