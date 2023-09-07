@@ -1,9 +1,10 @@
 import React from 'react'
+import "./index.css";
 
 const Avatar = () => {
   return (
     <div>
-      Avatar
+      <h1>Avatar</h1>
     </div>
   )
 };
