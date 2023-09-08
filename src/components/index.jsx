@@ -8,6 +8,7 @@ import ImageAvatar from "./Avatar/ImageAvatar";
 import LetterAvatar from "./Avatar/LetterAvatar";
 import IconBadge from "./Badge/IconBadge";
 import StatusBadge from "./Badge/StatusBadge";
+import FilledAlert from "./Alert/FilledAlert";
 
 
-export { SolidButton, LinkButton, IconButton, FloatingActionButton, OutlineButton, ImageAvatar, LetterAvatar, IconBadge, StatusBadge};
+export { SolidButton, LinkButton, IconButton, FloatingActionButton, OutlineButton, ImageAvatar, LetterAvatar, IconBadge, StatusBadge, FilledAlert};
