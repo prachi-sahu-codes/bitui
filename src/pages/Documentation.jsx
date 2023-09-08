@@ -6,6 +6,8 @@ import {
   OutlineButton,
   ImageAvatar,
   LetterAvatar,
+  StatusBadge,
+  IconBadge
 } from "../components";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
@@ -23,31 +25,49 @@ const Documentation = () => {
         <IconButton visuals={{}} icon={<ShoppingCartIcon/>}>Add to cart</IconButton>
         <FloatingActionButton title="Add"><AddIcon/></FloatingActionButton>
         <OutlineButton>Outline Button</OutlineButton> */}
-      <ImageAvatar
+      {/* <ImageAvatar
         avatarSource={avatar1}
-        avatarAlt="dog selfie"
+        avatarAlt="human pic"
         dimension="35px"
       />
       <ImageAvatar
         avatarSource={avatar2}
-        avatarAlt="dog selfie"
+        avatarAlt="human pic"
         dimension="50px"
       />
       <ImageAvatar
         avatarSource={avatar3}
-        avatarAlt="dog selfie"
+        avatarAlt="human pic"
         dimension="80px"
       />
       <ImageAvatar
         avatarSource={avatar4}
-        avatarAlt="dog selfie"
+        avatarAlt="human pic"
         dimension="120px"
       />
 
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="35" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="50" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="80" />
-      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" />
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" /> */}
+
+      <StatusBadge badgeColor="red">
+        <ImageAvatar
+          avatarSource={avatar1}
+          avatarAlt="human pic"
+          dimension="35px"
+        />
+      </StatusBadge>
+
+      <StatusBadge badgeColor="red">
+        <ImageAvatar
+          avatarSource={avatar4}
+          avatarAlt="human pic"
+          dimension="120px"
+        />
+      </StatusBadge>
+      <IconBadge badgeColor="red" badgeText="2" dimension="50"><ShoppingCartIcon/></IconBadge>
+     
     </div>
   );
 };
