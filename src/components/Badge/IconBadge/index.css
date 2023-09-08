@@ -1,0 +1,22 @@
+.icon-badge{
+    position: relative;
+    display: inline-block;
+}
+
+.icon-badge-text{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    font-size: 30%;
+    font-weight: 600;
+    top: -21%;
+    right:-20%;
+    border-radius: 50%;
+    color: var(--white);
+}
+.icon-badge-content >svg{
+    font-size: 1em;
+}

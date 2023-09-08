@@ -1,0 +1,21 @@
+.status-badge{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.status-badge-child{
+    border-radius: 50%;
+}
+
+.status-badge-child::before{
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    bottom: 7%;
+    right:7%;
+    border-radius: 50%;
+    background-color: inherit;
+    z-index: 1;
+}
