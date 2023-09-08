@@ -7,7 +7,8 @@ import {
   ImageAvatar,
   LetterAvatar,
   StatusBadge,
-  IconBadge
+  IconBadge,
+  FilledAlert
 } from "../components";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
@@ -15,6 +16,7 @@ import avatar1 from "../assets/avatar1.jpg";
 import avatar2 from "../assets/avatar2.jpg";
 import avatar3 from "../assets/avatar3.jpg";
 import avatar4 from "../assets/avatar4.jpg";
+import {InfoOutlined} from "@mui/icons-material";
 
 const Documentation = () => {
   return (
@@ -50,7 +52,7 @@ const Documentation = () => {
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="50" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="80" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" /> */}
-
+{/* 
       <StatusBadge badgeColor="red">
         <ImageAvatar
           avatarSource={avatar1}
@@ -66,8 +68,9 @@ const Documentation = () => {
           dimension="120px"
         />
       </StatusBadge>
-      <IconBadge badgeColor="red" badgeText="2" dimension="50"><ShoppingCartIcon/></IconBadge>
+      <IconBadge badgeColor="red" badgeText="2" dimension="50"><ShoppingCartIcon/></IconBadge> */}
      
+     {/* <FilledAlert message="Hi this is warning" typeIcon={<InfoOutlined/>} messageColor="black"/> */}
     </div>
   );
 };

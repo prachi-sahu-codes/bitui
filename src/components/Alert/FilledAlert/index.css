@@ -1,0 +1,15 @@
+.filled-alert{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 1rem;
+    max-width: 280px;
+    min-width: 280px;
+    padding: 1em;
+    font-size: 1rem;
+    color: var(--white);
+    font-weight:500;
+    border-radius: 5px;
+    border-left: 6px solid var(--black);
+    margin: 1rem;
+}
