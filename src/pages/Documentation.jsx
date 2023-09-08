@@ -44,10 +44,10 @@ const Documentation = () => {
         dimension="120px"
       />
 
-      <LetterAvatar avatarText="Aditya" options="letter-sm" />
-      <LetterAvatar avatarText="Aditya" options="letter-md" />
-      <LetterAvatar avatarText="Aditya" options="letter-lg" />
-      <LetterAvatar avatarText="Aditya" options="letter-xl" />
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="35" />
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="50" />
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="80" />
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" />
     </div>
   );
 };
