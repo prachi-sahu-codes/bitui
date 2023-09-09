@@ -1,0 +1,27 @@
+.card-dismiss{
+    position: relative;
+    padding: 0.4em;
+    padding-top: 2em;
+    background-color: #cbf6ff;
+    border-radius: 8px;
+    min-width:210px;
+    max-width: 210px;
+    min-height:250px;
+    max-height: 250px;
+    margin: 1rem;
+}
+
+.card-dismiss-label{
+    position: absolute;
+    display: flex;
+    top: 8px;
+    right: 8px;
+    color: var(--white);
+    padding: 3px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.card-dismiss-label svg{
+    font-size: 14px;
+}

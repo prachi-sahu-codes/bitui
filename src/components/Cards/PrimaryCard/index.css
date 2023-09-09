@@ -1,0 +1,13 @@
+.primary-card{
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.primary-image{
+    object-fit: cover;
+}
+
+.primary-content{
+    padding: 0 1em 1em;
+   
+}
