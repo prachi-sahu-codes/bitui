@@ -7,8 +7,9 @@
   --primary-darker:#0077b6;
 
   --shadow: #aeadad;
+  --grayColor:#9f9f9f;
   --white:#fff;
-  --black:#212121;
+  --black:#2e2e2e;
 }
 
 *{
