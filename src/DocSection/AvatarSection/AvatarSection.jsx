@@ -7,7 +7,10 @@ import avatar4 from "../../assets/avatar4.jpg";
 
 const AvatarSection = () => {
   return (
-    <section id="avatar">
+    <section id="avatar" className="section-content">
+      <h2 className="section-head">Avatar</h2>
+      <p className="section-text">Avatars are small user profile images or icons used to represent individuals or entities. They provide a visual identity and recognition in applications.</p>
+      <h3>Example of Avatars</h3>
       <ImageAvatar
         avatarSource={avatar1}
         avatarAlt="human pic"

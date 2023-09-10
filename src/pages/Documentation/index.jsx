@@ -2,10 +2,10 @@ import "./index.css";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import {
-  ButtonSection,
-  AvatarSection,
   AlertSection,
+  AvatarSection,
   BadgeSection,
+  ButtonSection,
   CardSection,
   HeadingSection,
   ImageSection,

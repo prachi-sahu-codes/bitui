@@ -12,7 +12,10 @@ import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepart
 
 const CardSection = () => {
   return (
-    <section id="card">
+    <section id="card" className="section-content">
+      <h2 className="section-head">Card</h2>
+      <p className="section-text">Cards are self-contained containers used to display content or information, often used for presenting grouped data or as a part of a layout structure.</p>
+      <h3>Example of Cards</h3>
       <BadgeCard
             badgeIcon={<LocalFireDepartmentOutlinedIcon />}
             badgeMessage="Hot"
