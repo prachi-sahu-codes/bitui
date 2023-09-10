@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import hero from "../../assets/hero.svg";
-import NavBar from "../../layout/Navbar";
+import NavBar from "../../layout/NavBar";
 import Footer from "../../layout/Footer";
 
 const Home = () => {

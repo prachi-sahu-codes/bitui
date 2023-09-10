@@ -1,9 +1,4 @@
 import {
-  SolidButton,
-  LinkButton,
-  IconButton,
-  FloatingActionButton,
-  OutlineButton,
   ImageAvatar,
   LetterAvatar,
   StatusBadge,
@@ -18,7 +13,6 @@ import {
 } from "../../components";
 import "./index.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import AddIcon from "@mui/icons-material/Add";
 import avatar1 from "../../assets/avatar1.jpg";
 import avatar2 from "../../assets/avatar2.jpg";
 import avatar3 from "../../assets/avatar3.jpg";
@@ -29,14 +23,10 @@ import { InfoOutlined } from "@mui/icons-material";
 import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
+import ButtonSection from "../../DocSection/ButtonSection/ButtonSection";
+
 
 const Documentation = () => {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <div>
@@ -47,14 +37,14 @@ const Documentation = () => {
             Bit-UI.
           </Link>
           <p className="sidebar-link-head">Components</p>
-          <ul>
-            <li>
-              <a className="sidebar-link" href="/button">
+          <ul className="sidebar-all-links">
+            <li className="sidebar-link">
+              <a href="#button">
                 Button
               </a>
             </li>
-            <li>
-              <a className="sidebar-link" href="/section1">
+            <li className="sidebar-link">
+              <a href="/section1">
                 card
               </a>
             </li>
@@ -63,19 +53,9 @@ const Documentation = () => {
 
         <div className="main-content">
 
-          <h1>Button</h1>
-          <SolidButton visuals={{}}>Solid Button</SolidButton>
-          <LinkButton visuals={{}} reach="">
-            Link Button
-          </LinkButton>
-          <IconButton visuals={{}} icon={<ShoppingCartIcon />}>
-            Add to cart
-          </IconButton>
-          <FloatingActionButton title="Add">
-            <AddIcon />
-          </FloatingActionButton>
-          <OutlineButton>Outline Button</OutlineButton>
-          {/* <ImageAvatar
+<ButtonSection/>
+          
+          <ImageAvatar
         avatarSource={avatar1}
         avatarAlt="human pic"
         dimension="35px"
@@ -99,8 +79,8 @@ const Documentation = () => {
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="35" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="50" />
       <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="80" />
-      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" /> */}
-          {/* 
+      <LetterAvatar avatarText="Aditya" avatarBg ="#00b4d8" dimension="120" />
+          
       <StatusBadge badgeColor="red">
         <ImageAvatar
           avatarSource={avatar1}
@@ -116,11 +96,11 @@ const Documentation = () => {
           dimension="120px"
         />
       </StatusBadge>
-      <IconBadge badgeColor="red" badgeText="2" dimension="50"><ShoppingCartIcon/></IconBadge> */}
+      <IconBadge badgeColor="red" badgeText="2" dimension="50"><ShoppingCartIcon/></IconBadge>
 
-          {/* <FilledAlert message="Hi this is warning" typeIcon={<InfoOutlined/>} messageColor="black"/> */}
+          <FilledAlert message="Hi this is warning" typeIcon={<InfoOutlined/>} messageColor="black"/>
 
-          {/* <BadgeCard
+          <BadgeCard
         badgeIcon={<LocalFireDepartmentOutlinedIcon />}
         badgeMessage="Hot"
         badgeColor="#a80824"
@@ -152,9 +132,9 @@ const Documentation = () => {
           <p style={{fontSize: "11px", color:"#3e3e3e", padding:"6px 0"}}>Lorem Ipsum is simply dummy text of the printing.</p>
           <button style={{width:"100%", padding:"3px", marginTop:"5px", backgroundColor:"#69b096", color:"#fff", border:"none", borderRadius:"4px", fontWeight:"600"}}>Add to cart</button>
         </div>
-      </BadgeCard> */}
+      </BadgeCard>
 
-          {/* <DismissCard visuals={{ padding: "0", backgroundColor: "#f3f3f3", maxHeight:"360px", minHeight:"360px" }} dismissBgColor="transparent" dismissColor="black">
+          <DismissCard visuals={{ padding: "0", backgroundColor: "#f3f3f3", maxHeight:"360px", minHeight:"360px" }} dismissBgColor="transparent" dismissColor="black">
       <img
           src={cardImage}
           width="100%"
@@ -181,7 +161,7 @@ const Documentation = () => {
           <p style={{fontSize: "11px", color:"#3e3e3e", padding:"6px 0"}}>Lorem Ipsum is simply dummy text of the printing.</p>
           <button style={{width:"100%", padding:"3px", marginTop:"5px", backgroundColor:"#69b096", color:"#fff", border:"none", borderRadius:"4px", fontWeight:"600"}}>Add to cart</button>
         </div>
-      </DismissCard> */}
+      </DismissCard>
 
           <DismissCard
             visuals={{

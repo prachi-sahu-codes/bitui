@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .doc-content {
   display: flex;
 }
@@ -16,24 +20,34 @@
 }
 
 .sidebar-link-head{
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 500;
     color: #747474;
     padding: 2em 0;
 }
 
-.sidebar-link{
-    font-weight: 500;
-    font-size: 0.9em;
-    text-decoration: none;
-    color: var(--black);
+.sidebar-all-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.sidebar-link:hover{
+.sidebar-link{
+    font-weight: 500;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+.sidebar-link a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.sidebar-link a:hover{
     color: var(--primary);
 }
 
-.sidebar-link:active{
+.sidebar-link a:active{
     color: var(--primary-darker);
 }
 
@@ -44,6 +58,7 @@
     color: var(--black);
     text-decoration: none;
     font-weight: 700;
+     font-size: 1.5em;
 }
 
 .logo > img{

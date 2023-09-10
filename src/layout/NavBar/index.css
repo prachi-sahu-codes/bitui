@@ -7,11 +7,11 @@
 
 .all-nav-link{
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .nav-link{
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 600;
     text-decoration: none;
 }
@@ -23,6 +23,7 @@
     color: var(--black);
     text-decoration: none;
     font-weight: 700;
+    font-size: 1.5em;
 }
 
 .logo > img{

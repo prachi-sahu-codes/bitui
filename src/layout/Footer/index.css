@@ -1,17 +1,16 @@
 .footer{
     position: relative;
     bottom: 0;
-    height: 9em;
     text-align: center;
     background-color: var(--black);
     color: var(--white);
-    padding: 1em 2em;
+    padding: 2em;
 }
 
 .footer-text{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 500;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .footer-text > span{
@@ -20,8 +19,8 @@
 
 .footer-links{
     color: var(--white);
-    padding: 0.5em;
-    font-size: 1.3em;
+    padding: 1em 0.5em;
+    font-size: 1.4em;
 }
 
 .footer-links:hover{
@@ -37,14 +36,14 @@
     justify-content: center;
     gap: 0.4em;
     margin: auto;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: darkgray;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .footer-secondary-text > p{
     display: flex;
-    gap: 0.1em;
+    gap: 0.2em;
     align-items: center;
     font-weight: 600;
 }
