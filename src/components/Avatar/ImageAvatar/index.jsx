@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 const ImageAvatar = (props) => {
-  const { avatarSource, avatarAlt, visuals, dimension } = props;
+  const { avatarSource, avatarAlt="avatar pic", visuals, dimension = 80 } = props;
   return (
     <div style={{ width: dimension, height: dimension }}>
       <img

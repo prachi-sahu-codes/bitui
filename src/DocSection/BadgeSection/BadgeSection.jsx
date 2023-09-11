@@ -6,7 +6,10 @@ import avatar4 from "../../assets/avatar4.jpg";
 
 const BadgeSection = () => {
   return (
-    <section id="badge">
+    <section id="badge" className="section-content">
+      <h2 className="section-head">Badges</h2>
+      <p className="section-text">Badges are small visual indicators, often containing numbers or labels, used to display notifications, counts, or additional information associated with an element.</p>
+      <h3>Example of Badges</h3>
       <StatusBadge badgeColor="red">
         <ImageAvatar
           avatarSource={avatar1}

@@ -6,10 +6,13 @@
   --primary-dark:#0096c7;
   --primary-darker:#0077b6;
 
+  --bg-primary:#cbf6ff;
+
+  --black:#2e2e2e;
+  --white:#fff;
   --shadow: #aeadad;
   --grayColor:#9f9f9f;
-  --white:#fff;
-  --black:#2e2e2e;
+  --gray-bg-light: #d7d7d78c;
 }
 
 *{

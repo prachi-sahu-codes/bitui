@@ -1,6 +1,7 @@
 .filled-alert{
     display: flex;
     align-items: center;
+    height: max-content;
     gap:10px;
     font-size: 1rem;
     max-width: 280px;
@@ -11,5 +12,4 @@
     font-weight:500;
     border-radius: 5px;
     border-left: 6px solid var(--black);
-    margin: 1rem;
 }
