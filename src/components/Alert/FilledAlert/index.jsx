@@ -3,12 +3,12 @@ import "./index.css";
 import {TaskAlt, ErrorOutline, WarningAmber, InfoOutlined} from "@mui/icons-material";
 
 const FilledAlert = (props) => {
-  const { type ="success", message, isIcon=true, typeBg, typeIcon, messageColor } = props;
+  const { alertType ="success", message, isIcon="true", typeBg, typeIcon, messageColor } = props;
 
   let alertIcon;
   let alertColor;
 
-  switch (type) {
+  switch (alertType) {
     case "error":
       alertColor = "#ae2012";
       alertIcon = <ErrorOutline />;
@@ -25,7 +25,7 @@ const FilledAlert = (props) => {
       alertColor = "#4cc9f0";
       alertIcon = <InfoOutlined />;
       break;
-    case `${type}`:
+    case `${alertType}`:
       alertColor = typeBg;
       alertIcon = typeIcon;
       break;
@@ -34,9 +34,10 @@ const FilledAlert = (props) => {
       break;
   }
 
+
   return (
     <div style={{ backgroundColor: alertColor, color: messageColor ?? "#fff" }} className="filled-alert">
-      {isIcon || typeIcon ?  typeIcon : alertIcon} <span>{message}</span>
+      {  isIcon === "true" ? typeIcon ? typeIcon : alertIcon : ""  } <span>{message}</span>
     </div>
   );
 };

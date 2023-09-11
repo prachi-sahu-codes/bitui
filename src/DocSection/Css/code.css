@@ -12,3 +12,7 @@
     height: 250px;
     border: none;
 }
+
+.code-box .small-code{
+    height: max-content;
+}

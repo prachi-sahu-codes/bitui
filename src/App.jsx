@@ -7,7 +7,6 @@ import Documentation from "./pages/Documentation";
 const App = () => {
   return (
     <div>
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/documentation" element={<Documentation />} />
