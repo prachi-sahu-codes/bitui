@@ -4,7 +4,7 @@ import "./index.css";
 const TextOnlyCard = (props) => {
   const {children, bgColor, visuals} = props;
   return (
-    <div className='text-only-card' style={{...visuals, backgroundColor: bgColor}}>
+    <div className='text-only-card' style={{backgroundColor: bgColor, ...visuals}}>
       {children}
     </div>
   )

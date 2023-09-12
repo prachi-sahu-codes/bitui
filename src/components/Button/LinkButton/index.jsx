@@ -5,7 +5,7 @@ const LinkButton = (props) => {
   const {children, visuals, reach} = props;
   return (
     <div>
-      <a className="link-btn" style={{...visuals}} href={{reach}}>{children}</a>
+      <a className="link-btn" style={{...visuals}} href={reach} target="_blank">{children}</a>
     </div>
   );
 };

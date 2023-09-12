@@ -14,6 +14,8 @@ import PrimaryCard from "./Cards/PrimaryCard";
 import ShadowCard from "./Cards/ShadowCard";
 import TextOnlyCard from "./Cards/TextOnlyCard";
 import TextOverlayCard from "./Cards/TextOverlayCard";
+import ResponsiveImage from "./Image/ResponsiveImage";
+import RoundedImage from "./Image/RoundedImage";
 
 export {
   SolidButton,
@@ -32,4 +34,6 @@ export {
   ShadowCard,
   TextOnlyCard,
   TextOverlayCard,
+  ResponsiveImage,
+  RoundedImage
 };

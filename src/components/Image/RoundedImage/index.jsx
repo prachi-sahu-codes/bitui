@@ -1,12 +1,12 @@
 import React from 'react';
 import "./index.css";
 
-const Image = () => {
+const RoundedImage = () => {
   return (
     <div>
-      Image
+      RoundedImage
     </div>
   )
 };
 
-export default Image;
+export default RoundedImage;

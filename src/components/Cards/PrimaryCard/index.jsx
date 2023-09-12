@@ -4,9 +4,9 @@ import "./index.css";
 const PrimaryCard = (props) => {
   const {visuals, imageSource, imageAlt, imageVisuals, children, direction} = props;
   return (
-    <div className= "primary-card" style={{...visuals, display:"flex", flexDirection:`${direction ? "column" : "row"}`, gap:"5px"}}>
+    <div className= "primary-card" style={{display:"flex", flexDirection:`${direction === "true" ? "column" : "row"}`, gap:"5px", ...visuals}}>
      <img src={imageSource} style={{...imageVisuals}} className='primary-image' alt={imageAlt ?? "card image"}/>
-     <div className='primary-content' style={{}}>{children}</div>
+     <div className='primary-content'>{children}</div>
     </div>
   )
 };

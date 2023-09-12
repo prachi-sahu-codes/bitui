@@ -7,8 +7,8 @@ const AvatarSection = () => {
       <p className="section-text">
         Avatars are small user profile images used to represent individuals or
         entities. They provide a visual identity and recognition in
-        applications. There are two types of Avatars available Image Avatar and
-        Letter Avatar :
+        applications. There are <strong>2</strong> types of Avatars available <em className="bold-500">Image Avatar and
+        Letter Avatar.</em>
       </p>
       <h2>Image Avatar :</h2>
       <p className="section-text">
@@ -16,7 +16,7 @@ const AvatarSection = () => {
       </p>
 
       <h3 className="section-subhead">Props</h3>
-      <p>Props available of the Image Avatar Component :</p>
+      <p>Props available for the Image Avatar Component :</p>
       <ul>
         <li className="section-li">
           <h4 className="section-subhead-head">avatarSource</h4>
@@ -108,7 +108,7 @@ const AvatarSection = () => {
       </p>
 
       <h3 className="section-subhead">Props</h3>
-      <p>Props available of the Letter Avatar Component :</p>
+      <p>Props available for the Letter Avatar Component :</p>
       <ul>
         <li className="section-li">
           <h4 className="section-subhead-head">avatarText</h4>
