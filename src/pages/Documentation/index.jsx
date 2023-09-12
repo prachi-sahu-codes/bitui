@@ -35,7 +35,7 @@ const Documentation = () => {
             </li> <li className="sidebar-link">
               <a href="#card">Card</a>
             </li> <li className="sidebar-link">
-              <a href="#heading">Headings</a>
+              <a href="#heading">Heading</a>
             </li> <li className="sidebar-link">
               <a href="#image">Image</a>
             </li>
