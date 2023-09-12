@@ -60,6 +60,12 @@
     gap: 1em;
 }
 
+.all-component-block{
+    display: flex;
+   flex-direction: column;
+    gap: 1.5em;
+}
+
 .flex-end{
     align-items: flex-end;
 }
