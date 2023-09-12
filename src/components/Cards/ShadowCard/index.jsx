@@ -4,7 +4,7 @@ import "./index.css";
 const ShadowCard = (props) => {
   const {children, shadowType, visuals} = props;
   return (
-    <div style={{...visuals}} className={`shadow-card ${shadowType === "inner" ? "inner-shadow" : "outer-shadow"}`}>
+    <div style={{...visuals}} className={`shadow-card ${shadowType === "inset" ? "inner-shadow" : "outer-shadow"}`}>
       {children}
     </div>
   )

@@ -13,7 +13,7 @@ const AlertSection = () => {
       </p>
 
       <h3 className="section-subhead">Props</h3>
-      <p>Props available of the Alert Component :</p>
+      <p>Props available for the Alert Component :</p>
       <ul>
         <li className="section-li">
           <h4 className="section-subhead-head">alertType</h4>
@@ -68,7 +68,7 @@ const AlertSection = () => {
           <p>This allows us to set a custom icon for the Alert component.</p>
           <div className="section-prop-type">
             <h4>Type: </h4>{" "}
-            <p className="section-type-value">React component</p>
+            <p className="section-type-value">node</p>
           </div>
           <hr className="horizontal-line" />
         </li>

@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 const TextOverlayCard = (props) => {
-  const { children, imageSource, imageVisuals, imageAlt, visuals, overlayVisuals } = props;
+  const { children, imageSource, imageAlt, imageVisuals, visuals, overlayVisuals } = props;
   return (
     <div style={{ ...visuals }} className="overlay-card">
       <img
