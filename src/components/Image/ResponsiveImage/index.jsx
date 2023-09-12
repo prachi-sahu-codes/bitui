@@ -1,10 +1,11 @@
 import React from 'react';
 import "./index.css";
 
-const ResponsiveImage = () => {
+const ResponsiveImage = (props) => {
+  const {imageSource, imageAlt, visuals} = props;
   return (
     <div>
-      <img className='img-responsive'/>
+      <img className='img-responsive' src={imageSource} style={{...visuals}} alt={imageAlt ?? "responsive image"}/>
     </div>
   )
 };
