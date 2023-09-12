@@ -17,6 +17,7 @@ import TextOverlayCard from "./Cards/TextOverlayCard";
 import ResponsiveImage from "./Image/ResponsiveImage";
 import RoundedImage from "./Image/RoundedImage";
 import Heading from "./Heading";
+import Text from "./Text";
 
 export {
   SolidButton,
@@ -37,5 +38,6 @@ export {
   TextOverlayCard,
   Heading,
   ResponsiveImage,
-  RoundedImage
+  RoundedImage,
+  Text
 };
