@@ -10,7 +10,7 @@ const Footer = () => {
       <div>
         <Link
           className="footer-links"
-          to="https://github.com/prachi-sahu-codes"
+          to="https://github.com/prachi-sahu-codes/bitui"
           target="_blank"
         >
           <i className="fa-brands fa-github" aria-hidden="true"></i>
