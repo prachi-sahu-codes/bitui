@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1.2fr;
   align-items: center;
   padding: 1em 4em;
-  /* height: calc(100vh - 8em); */
+  gap: 1em;
 }
 
 .hero-content {
@@ -52,6 +52,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
   list-style: none;
   margin: 2em 4em 5em;
 }
@@ -71,7 +73,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.6em;
-  width: 220px;
+  width: 215px;
   font-size: 1.1rem;
 }
 
@@ -88,4 +90,43 @@
 
 .feature-flex > span > svg {
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .hero-content {
+    margin: 4em 0;
+  }
+  .hero-text {
+    font-size: 2em;
+  }
+  .feature-section {
+    justify-content: center;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-text {
+    font-size: 1.5em;
+  }
+  .home-btn {
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+  }
+  .home-main {
+    padding: 1em 2em;
+  }
 }

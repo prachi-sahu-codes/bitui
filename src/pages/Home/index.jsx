@@ -12,8 +12,7 @@ const Home = () => {
       <div className="home-main">
         <div className="hero-content">
           <h1 className="hero-text">
-            Your Ultimate Component Library which bring your
-            <span>idea to reality.</span>
+            Your Ultimate Component Library which bring your <span>idea to reality.</span>
           </h1>
           <p className="hero-para">
             Ready to explore? Unlock Boundless Creativity now.

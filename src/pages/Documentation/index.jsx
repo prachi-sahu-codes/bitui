@@ -1,6 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
-import { Search, ArrowDropUp } from "@mui/icons-material";
-import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
+import { Search, Menu } from "@mui/icons-material";
 import "./index.css";
 import {
   AlertSection,
@@ -13,8 +12,9 @@ import {
   TextSection,
 } from "../../DocSection";
 import SearchBar from "../../layout/SearchBar";
-import {  useState } from "react";
+import { useState } from "react";
 import Footer from "../../layout/Footer";
+import Sidebar from "./component/Sidebar";
 
 const componentList = [
   { id: 1, hrefId: "#alert", name: "Alert" },
@@ -29,6 +29,7 @@ const componentList = [
 
 const Documentation = () => {
   const [showSearch, setShowSearch] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(sectionId);
@@ -40,43 +41,34 @@ const Documentation = () => {
   return (
     <div>
       <div className="doc-content">
-        <div className="sidebar">
-          <Link className="logo" to="/">
-            <img src={logo} />
-            Bit-UI.
-          </Link>
-          <p className="sidebar-link-head">Components</p>
-          <ul className="sidebar-all-links">
-            {componentList.map((item) => (
-              <li key={item.id} className="sidebar-link">
-                <NavLink
-                  to={item.hrefId}
-                  onClick={() => scrollToSection(item.hrefId)}
-                >
-                  {item.name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+        <div className="mobile-hide">
+          <Sidebar componentList={componentList} />
         </div>
 
         <div className="main-content">
           <div className="doc-nav-bar">
             <div
-              className="search-bar"
-              onClick={() => setShowSearch((prev) => !prev)}
+              className="menu-icon"
+              onClick={() => setShowMenu((prev) => !prev)}
             >
-              <Search />
-              <p className="search-msg">Search...</p>
+              <Menu />
             </div>
-            <Link
-          className="github-links"
-          to="https://github.com/prachi-sahu-codes/bitui"
-          target="_blank"
-        >
-          <i className="fa-brands fa-github" aria-hidden="true"></i>
-        </Link>
-
+            <div className="doc-content">
+              <div
+                className="search-bar"
+                onClick={() => setShowSearch((prev) => !prev)}
+              >
+                <Search />
+                <p className="search-msg">Search...</p>
+              </div>
+              <Link
+                className="github-links"
+                to="https://github.com/prachi-sahu-codes/bitui"
+                target="_blank"
+              >
+                <i className="fa-brands fa-github" aria-hidden="true"></i>
+              </Link>
+            </div>
           </div>
           <AlertSection />
           <AvatarSection />
@@ -94,7 +86,8 @@ const Documentation = () => {
           componentList={componentList}
         />
       )}
-      <Footer/>
+      {showMenu && <Sidebar style={{display: showMenu? "fixed":"none"}} componentList={componentList} setShowMenu={setShowMenu}/>}
+      <Footer />
     </div>
   );
 };

@@ -3,7 +3,6 @@ html{
     scroll-padding-top: 3em;
 }
 
-
 .doc-content {
   display: flex;
 }
@@ -11,18 +10,25 @@ html{
 .sidebar {
   position: sticky;
   top: 0em;
-  width: 200px;
+  width: 230px;
   height: 100vh;
-  padding: 1em 1.5em;
+  padding: 1em 2.5em;
   border-right: 1px solid #dbdbdb;
 }
 
+.sidebar-close-icon{
+    display: none;
+}
+
+.sidebar-close-icon>svg{
+    font-size: 1.4rem;
+}
 .main-content {
   width: 100%;
 }
 
 .sidebar-link-head{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #747474;
     padding: 2em 0;
@@ -36,7 +42,7 @@ html{
 
 .sidebar-link{
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     list-style: none;
 }
 
@@ -61,8 +67,12 @@ html{
    align-items: center;
    justify-content: right;
    background-color: var(--white);
-   z-index: 1;
+   z-index: 2;
    margin-bottom: -2.1em
+}
+
+.menu-icon{
+    display: none;
 }
 
 .search-bar {
@@ -76,7 +86,7 @@ html{
 
 .search-msg{
     width: 100%;
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
     border-radius: 3em;
     font-weight: 500;
     color: gray;
@@ -104,4 +114,65 @@ html{
 .arrow-icon > svg{
     display: flex;
     font-size: 2.2rem;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width:800px) {
+    .sidebar-logo{
+        font-size: 1rem;
+    }
+    .search-bar {
+        width: 15em;
+    }
+    .doc-nav-bar{
+        padding: 0.8em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sidebar-logo{
+        font-size: 1rem;
+    }
+   .doc-nav-bar{
+    justify-content: space-between;
+   }
+
+    .menu-icon{
+        display: inline-block;
+        position: relative;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        padding: 1em 2em;
+        border-right: 1px solid #dbdbdb;
+        background-color: var(--white);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        z-index: 3;
+      }
+      .sidebar-close-icon{
+        display: inline-block;
+      
+    }
+      .search-bar {
+        width: 12em;
+    }
+    .search-msg{
+        padding: 0.1em 0.8em;
+    }
+    .github-links{
+        font-size: 1.5rem;
+    }
 }
